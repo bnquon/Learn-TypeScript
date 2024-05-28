@@ -1,0 +1,155 @@
+#homeCon {
+    background-color: silver;
+    position: relative;
+    height: 60vh;
+    width: 97vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns with equal width */
+    grid-template-rows: 1.5fr 1fr;  /* Two rows with height based on content */
+    margin-left: 1.5%;
+    gap: 2%;
+}
+
+#tl {
+    /* background-color: gray; */
+    background-image: linear-gradient(to right, #D31027 0%, #EA384D  51%, #D31027  100%);
+    position: relative;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background-color: black;
+    color: white;
+    width: 98%;
+    margin-top: 2%;
+    border-radius: 20px;
+}
+
+#tlInfo {
+    width: 80%;
+    margin-left: 5rem;
+}
+
+#tlInfo > p {
+    font-size: 2.75rem;
+    margin-bottom: 1rem;
+}
+
+#tlInfo > button {
+    margin-top: 1.5rem;
+    font-size: 2rem;
+}
+
+#bl {
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+}
+
+#bLeft {
+    background-color: white;
+    border-radius: 20px;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    /* height: 60%; */
+}
+
+#bLeft > img {
+    max-width: 100%;
+    border-radius: 20px;
+}
+
+.clickable {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#events, #compteam {
+    cursor: pointer;
+    position: relative;
+    background-color: black;
+    border-radius: 20px;
+    width: 97%;
+    height: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    color: white;   
+}
+
+#compteam > img {
+    filter: brightness(0.65);
+    position: absolute;
+    left: -75%;
+    transform: scale(0.55);
+}
+
+#compteam > span,
+#events > span {
+    position: relative;
+    width: 95%;
+    font-weight: 100;
+    color: white;
+    font-size: 2.5rem;
+    margin-left: 5%;
+}
+
+#arrow2,
+#arrow1 {
+    margin-left: 2%;
+    opacity: 0;
+    transition: 500ms;
+}
+
+#compteam:hover,
+#events:hover {
+    text-decoration: underline;
+}
+
+#compteam:hover #arrow2,
+#events:hover #arrow1 {
+    opacity: 1;
+    transform: translateX(50%);
+}
+
+.btn-grad {
+    background-image: linear-gradient(to right, #ECE9E6 0%, #FFFFFF  51%, #ece9e6e7  100%);
+    margin: 10px;
+    padding: 15px 30px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: black;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.btn-grad:hover {
+    background-position: right center; /* change the direction of the change here */
+    text-decoration: none;
+}
+
+#Right {
+    position: relative;
+    background-color: white;
+    margin-top: 2%;
+    width: 102%;
+    border-radius: 20px;
+    margin-left: -3.5%;
+    grid-column: 2;
+    grid-row: 1 / span 2; /* Span across both rows */
+}
+
+#Right > img {
+    position: relative;
+    margin-top: 5rem;
+    max-height: 80%;
+    margin-left: 3rem;
+    border-radius: 20px;
+}

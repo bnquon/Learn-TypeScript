@@ -1,0 +1,32 @@
+#raccoon {
+    position: relative;
+    width: 10vw;
+    margin-left: 45vw;
+    display: flex;
+    justify-content: center;
+    height: 8vh;
+}
+
+#raccoon > img {
+    position: relative;
+    width: 50%;
+    animation: raccJump linear infinite 6s;
+}
+
+@keyframes raccJump {
+    0% {
+        transform: translateY(0);
+    }
+    20% {
+        transform: translateY(-12.5%);
+    }
+    50% {
+        transform: translateY(0);
+    }
+    70% {
+        transform: translateY(-10%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}

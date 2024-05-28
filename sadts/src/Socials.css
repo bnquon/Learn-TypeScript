@@ -1,0 +1,30 @@
+.socialsCon > #racc {
+    max-width: 20%;
+    max-height: 75px;
+}
+
+.socialsCon {
+    position: relative;
+    color: white;
+    width: 97vw;
+    margin-left: 1.5%;
+    margin-top: 1vh;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+    height: 6vh;
+    /* border: 1px solid white; */
+}
+
+.sm {
+    cursor: pointer;
+    position: relative;
+    height: 40%;
+}
+
+.sm:hover {
+    transition: 250ms;
+    transform: scale(1.2);
+}
